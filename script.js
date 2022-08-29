@@ -19,7 +19,7 @@ function addNewNote(text = "") {
     note.innerHTML = `
     <div class="tools">
          <label class="seatButton">
-              <input type="checkbox" class="edit" checked/>
+              <input type="checkbox" class="edit"/>
               <span class="seatButton button" class="add"> <i class="fas fa-edit"></i></span>
         </label>
         <button class="delete button" id="delete">
@@ -30,7 +30,6 @@ function addNewNote(text = "") {
     
     </div>
     <textarea class="${text ? 'hidden' : ''}" >
-
     </textarea>
  `
     const editBtn = note.querySelector('.edit');
