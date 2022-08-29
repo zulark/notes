@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-:root{ 
+:root {
     --font-family1: 'Montserrat', sans-serif;
     --font-family2: 'Open Sans', sans-serif;
     --font-size-primary: 2rem;
@@ -15,7 +15,7 @@
 
 * {
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -26,7 +26,7 @@ body {
     margin: 0;
 }
 
-.add{ 
+.add {
     background-color: #478C5C;
     border-radius: 3px;
     border: none;
@@ -41,18 +41,20 @@ body {
     cursor: pointer;
     transition: .2s;
 }
-.add:hover{
+
+.add:hover {
     bottom: 3.5rem;
 }
 
-.note{ 
+.note {
     margin: 20px;
     height: 400px;
     width: 425px;
-    
+    border: 3px;
+
 }
 
-.note .tools{ 
+.note .tools {
     display: flex;
     justify-content: flex-end;
     background-color: var(--bg-color-note);
@@ -60,7 +62,7 @@ body {
     height: 3rem;
 }
 
-.note .tools button { 
+.note .tools button {
     background-color: transparent;
     border: none;
     font-size: 1.25rem;
@@ -69,11 +71,40 @@ body {
     width: 5rem;
 }
 
-.note .tools button:hover{
+.note .tools button:hover {
     background-color: #c7a623;
-    
 }
-.note .main { 
+
+label{
+
+    border: none;
+    font-size: 1.25rem;
+    color: #333652;
+    cursor: pointer;
+    width: 60px;
+    height: 35px;
+
+}
+label:hover{ 
+    background-color: #c7a623;
+}
+input {
+    display: none;
+}
+
+input:checked+.seatButton  {
+    background: #6c5a12;
+    color: #f2f2f2;
+}
+.seatButton {
+    width: 60px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note .main {
     background-color: #f2f2f2;
     overflow: auto;
     height: 370px;
@@ -82,9 +113,10 @@ body {
     font-weight: 600;
     color: #000;
     padding: 20px;
+    text-align: justify;
 }
 
-.note textarea{ 
+.note textarea {
     background-color: #f2f2f2;
     font-size: 1.5rem;
     font-weight: 600;
@@ -97,12 +129,14 @@ body {
     resize: none;
     text-align: justify;
     padding: 20px;
-} 
+}
+
 .note .hidden {
     display: none;
 }
 
-p{ 
+p {
+    margin-top: 0;
     word-break: break-all;
     text-align: justify;
 }

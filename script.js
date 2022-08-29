@@ -13,12 +13,17 @@ addBtn.addEventListener('click', () => {
 function addNewNote(text = "") {
     const note = document.createElement('div');
     note.classList.add('note');
-
+    //    <button class="edit" id="edit">
+    //         <i class="fas fa-edit"></i>
+    //     </button>
     note.innerHTML = `
     <div class="tools">
-        <button class="edit" id="edit">
-            <i class="fas fa-edit"></i>
-        </button>
+    <label class="seatButton">
+    <input type="checkbox"  class="edit"/>
+    <span class="seatButton" class="add"> <i class="fas fa-edit"></i></span>
+  </label>
+
+ 
         <button class="delete" id="delete">
             <i class="fas fa-trash-alt"></i>
         </button>
@@ -70,4 +75,3 @@ function updateLS() {
     });
     localStorage.setItem('notes', JSON.stringify(notes))
 }
-
