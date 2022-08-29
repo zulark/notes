@@ -97,7 +97,7 @@ input:checked+.seatButton  {
 }
 .seatButton {
     width: 60px;
-    height: 35px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

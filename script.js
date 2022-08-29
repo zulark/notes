@@ -18,24 +18,21 @@ function addNewNote(text = "") {
     //     </button>
     note.innerHTML = `
     <div class="tools">
-    <label class="seatButton ">
-    <input type="checkbox"  class="edit"/>
-    <span class="seatButton button" class="add"> <i class="fas fa-edit"></i></span>
-  </label>
+         <label class="seatButton">
+              <input type="checkbox" class="edit" checked/>
+              <span class="seatButton button" class="add"> <i class="fas fa-edit"></i></span>
+        </label>
         <button class="delete button" id="delete">
             <i class="fas fa-trash-alt "></i>
         </button>
     </div>
     <div class="main ${text ? '' : 'hidden'} ">
-
+    
     </div>
     <textarea class="${text ? 'hidden' : ''}" >
 
     </textarea>
-
  `
-
-
     const editBtn = note.querySelector('.edit');
     const deleteBtn = note.querySelector('.delete');
     const main = note.querySelector('.main');
