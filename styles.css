@@ -101,6 +101,7 @@ input:checked+.seatButton  {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .note .main {
@@ -162,13 +163,14 @@ p {
     }
 
     .button i{ 
-        font-size: 1.5rem;
+        font-size: 1.15rem;
+
     }
     .note .main{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .note textarea{ 
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 @media (max-width: 890px) {
@@ -181,13 +183,13 @@ p {
         width: 100%;
     }
     .note .main{
-        font-size: 1.65rem;
+        font-size: 1.2rem;
     }
     .note textarea{ 
-        font-size: 1.65rem;
+        font-size: 1.2rem;
     }
     .button i{ 
-        font-size: 1.75rem;
+        font-size: 1.15rem;
     }
     /* #iconAdd{
         display: block;
