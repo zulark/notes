@@ -13,19 +13,17 @@ addBtn.addEventListener('click', () => {
 function addNewNote(text = "") {
     const note = document.createElement('div');
     note.classList.add('note');
-    //    <button class="edit" id="edit">
+    //    <button class="edit button" id="edit">
     //         <i class="fas fa-edit"></i>
     //     </button>
     note.innerHTML = `
     <div class="tools">
-    <label class="seatButton">
+    <label class="seatButton ">
     <input type="checkbox"  class="edit"/>
-    <span class="seatButton" class="add"> <i class="fas fa-edit"></i></span>
+    <span class="seatButton button" class="add"> <i class="fas fa-edit"></i></span>
   </label>
-
- 
-        <button class="delete" id="delete">
-            <i class="fas fa-trash-alt"></i>
+        <button class="delete button" id="delete">
+            <i class="fas fa-trash-alt "></i>
         </button>
     </div>
     <div class="main ${text ? '' : 'hidden'} ">
@@ -62,6 +60,7 @@ function addNewNote(text = "") {
     });
 
     document.body.appendChild(note);
+    console.log("botao add")
 }
 
 
