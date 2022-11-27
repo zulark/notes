@@ -24,7 +24,24 @@ body {
     background-color: var(--bg-color);
     font-family: var(--font-family1);
     margin: 0;
+    
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f2f2f2; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 .add {
     background-color: #478C5C;
@@ -49,7 +66,7 @@ body {
 .note {
     margin: 20px;
     height: 400px;
-    width: 425px;
+    width: calc(25% - 40px);
     border: 3px;
 }
 
@@ -129,6 +146,7 @@ input:checked+.seatButton  {
     resize: none;
     text-align: justify;
     padding: 20px;
+    word-break: break-all;
 }
 
 .note .hidden {

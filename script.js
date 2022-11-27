@@ -1,6 +1,5 @@
 const addBtn = document.querySelector('.add');
 const notes = JSON.parse(localStorage.getItem('notes'));
-
 if (notes) {
     notes.forEach((note) => {
         addNewNote(note);
@@ -26,10 +25,10 @@ function addNewNote(text = "") {
             <i class="fas fa-trash-alt "></i>
         </button>
     </div>
-    <div class="main ${text ? '' : 'hidden'} ">
+    <div class="main ">
     
     </div>
-    <textarea class="${text ? 'hidden' : ''}" >
+    <textarea class="hidden" >
     </textarea>
  `
     const editBtn = note.querySelector('.edit');
@@ -54,7 +53,7 @@ function addNewNote(text = "") {
         main.innerHTML = marked(value);
         updateLS();
     });
-
+    
     document.body.appendChild(note);
     console.log("botao add")
 }
